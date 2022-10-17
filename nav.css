@@ -49,6 +49,7 @@ body {
     position: relative;
     top: 1px;
     left: -1px;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .upper-menu__logo:hover {
@@ -67,10 +68,12 @@ body {
     border: none;
     background-color:#FFFFFF;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .upper-menu__button:hover {
     opacity: 0.5;
+    transform: scale(1.2);
 }
 
 /* ------ Navigation ------  */
@@ -142,10 +145,12 @@ body {
     border: none;
     background-color:#FFFFFF;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .contact__button:hover {
     opacity: 0.5;
+    transform: scale(1.2);
 }
 
 .contact__email {
@@ -183,6 +188,7 @@ body {
     line-height: 24px;
     letter-spacing: -0.2px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .languages__button--current {
@@ -191,4 +197,5 @@ body {
 
 .languages__button:hover {
     opacity: 0.5;
+    transform: scale(1.2);
 }
