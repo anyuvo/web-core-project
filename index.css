@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "TT Lakes";
+    font-family: "TT Lakes Regular";
     font-weight: regular;
     font-style: normal;
     src: local("TT Lakes"),
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: "TT Lakes";
+    font-family: "TT Lakes Medium";
     font-weight: medium;
     font-style: normal;
     src: local("TT Lakes"),
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: "TT Lakes";
+    font-family: "TT Lakes Bold";
     font-weight: bold;
     font-style: normal;
     src: local("TT Lakes"),
@@ -31,7 +31,7 @@ body {
     margin: 0 auto;
     padding: 0;
     width: 320px;
-    font-family: 'TT Lakes', "Arial", sans-serif;
+    font-family: 'TT Lakes Regular', "Arial", sans-serif;
 }
 
 /* ----- ХЭДЕР 320px ----- */
@@ -115,6 +115,7 @@ body {
     width: 288px;
     height: 40px;
     font-size: 28px;
+    font-family: "TT Lakes Bold";
     font-weight: bold;
     line-height: 40px;
     letter-spacing: -0.6px;
@@ -148,6 +149,7 @@ body {
     display: block;
     height: 24px;
     font-size: 16px;
+    font-family: "TT Lakes Medium";
     font-weight: medium;
     text-decoration: none;
     letter-spacing: -0.2px;
@@ -169,6 +171,7 @@ body {
     width: 288px;
     font-size: 14px;
     line-height: 18px;
+    font-family: "TT Lakes Regular";
     font-weight: regular;
     letter-spacing: 0.1px;
     color: #1B1C21;
@@ -180,6 +183,7 @@ body {
     margin-bottom: 16px;
     margin-left: 48px;
     font-size: 16px;
+    font-family: "TT Lakes Medium";
     font-weight: medium;
     text-decoration: none;
     letter-spacing: -0.2px;
@@ -345,6 +349,7 @@ body {
         padding-right: 9px;
         font-size: 16px;
         line-height: 24px;
+        font-family: "TT Lakes Medium";
         font-weight: medium;
         letter-spacing: -0.2px;   
         color: #1B1C21;    
