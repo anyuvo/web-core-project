@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "TT Lakes";
+    font-weight: normal;
+    font-style: regular;
+    src: local("TT Lakes"),
+        url("/fonts/TTLakes-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    font-weight: medium;
+    font-style: normal;
+    src: local("TT Lakes"),
+        url("/fonts/TTLakes-Medium.woff") format("woff");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    font-family: 'TT Lakes', "Arial", sans-serif;
+}
+
+.sm:not(.xs),
+.lg:not(.xs) {
+    display: none;
+}
+
+.brands {
+    background-color: #F8F8F8;
+
+}
+
+.brands__title {
+    margin: 0;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: regular;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    background-image: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.brands__list {
+    box-sizing: border-box;
+    max-width: 320px;
+    margin: 0;
+    padding: 16px 0px 66px 16px;
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+.brands__link {
+    box-sizing: border-box;
+    margin-right: 16px;
+    padding: 16px;
+    min-width: 240px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+.brands__link::after {
+    content: url(./icons/go.svg);
+    max-height: 40px;
+}
+
+@media (min-width: 768px) {
+    .sm:not(.xs) {
+        display: block;
+    }
+
+    .xs:not(.sm) {
+        display: none;
+    }
+
+    body {
+        width: 768px;
+    }
+    
+    .brands__title {
+        padding: 16px 24px;
+        background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    }
+
+    .brands__list {
+        max-width: 768px;
+        padding: 24px 0px 24px 24px;
+        flex-wrap: wrap;
+    }
+    
+    .brands__link {
+        margin-right: 24px;
+        margin-bottom: 16px;
+        padding: 16px;
+        min-width: 224px;
+        align-items: center;
+    }
+
+    .brands__show-more-button {
+        padding: 0;
+        margin-bottom: 34px;
+        margin-left: 57px;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-weight: medium;
+        font-style: normal;
+        color: #1B1C21;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .brands__show-more-button::before {
+        content: url("/icons/expand.svg");
+        position: absolute;
+        left: -32px;
+    }
+    
+}
